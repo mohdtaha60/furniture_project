@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "7976432903",
+    "firebase_url": "https://mybot-wgjqia.firebaseio.com",
+    "project_id": "mybot-wgjqia",
+    "storage_bucket": "mybot-wgjqia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7976432903:android:e7a481cec13b243eec01a2",
+        "android_client_info": {
+          "package_name": "com.marcm.furniture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7976432903-5u6s1hakpfks0korjem1ki3032ka8b9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsD4eVKXvmfKdktDr2Hjtj7X9eu4n8IsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7976432903-5u6s1hakpfks0korjem1ki3032ka8b9d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
