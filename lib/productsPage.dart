@@ -102,7 +102,7 @@ class _ProductsPageState extends State<ProductsPage> {
                                         topRight: Radius.circular(22),
                                       ),
                                     ),
-                                     child: Text(products[index].data["ProductName"])
+                                     child: Text(products[index].data["ProductName"]),
                                   ),
                                 ],
                               )),
