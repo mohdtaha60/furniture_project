@@ -1,44 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Taha\\Documents\\flutterprojects\\newsportal_flutter\\furniture_project\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\Taha\\Documents\\flutterprojects\\furniture_project\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
-                {
-                    "source": "C:\\Users\\Taha\\Documents\\flutterprojects\\newsportal_flutter\\furniture_project\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,197,304,384,488,595,715,811",
-                        "endColumns": "141,106,79,103,106,119,95,72",
-                        "endOffsets": "192,299,379,483,590,710,806,879"
-                    },
-                    "to": {
-                        "startLines": "104,105,106,107,108,109,110,111",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "7730,7872,7979,8059,8163,8270,8390,8486",
-                        "endColumns": "141,106,79,103,106,119,95,72",
-                        "endOffsets": "7867,7974,8054,8158,8265,8385,8481,8554"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Taha\\Documents\\flutterprojects\\newsportal_flutter\\furniture_project\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "137,791",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "433,953"
-                    },
-                    "to": {
-                        "startLines": "113,118",
-                        "startColumns": "4,4",
-                        "startOffsets": "8630,8927",
-                        "endLines": "117,120",
-                        "endColumns": "12,12",
-                        "endOffsets": "8922,9087"
-                    }
-                },
                 {
                     "source": "C:\\Users\\Taha\\.gradle\\caches\\transforms-2\\files-2.1\\4c0b774c09d5393feb013f0dbe753af3\\play-services-base-17.0.0\\res\\values\\values.xml",
                     "from": {
@@ -92,6 +56,42 @@
                         "startOffsets": "5259,6437",
                         "endColumns": "67,166",
                         "endOffsets": "5322,6599"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Taha\\Documents\\flutterprojects\\furniture_project\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "137,791",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "433,953"
+                    },
+                    "to": {
+                        "startLines": "113,118",
+                        "startColumns": "4,4",
+                        "startOffsets": "8630,8927",
+                        "endLines": "117,120",
+                        "endColumns": "12,12",
+                        "endOffsets": "8922,9087"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Taha\\Documents\\flutterprojects\\furniture_project\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,197,304,384,488,595,715,811",
+                        "endColumns": "141,106,79,103,106,119,95,72",
+                        "endOffsets": "192,299,379,483,590,710,806,879"
+                    },
+                    "to": {
+                        "startLines": "104,105,106,107,108,109,110,111",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "7730,7872,7979,8059,8163,8270,8390,8486",
+                        "endColumns": "141,106,79,103,106,119,95,72",
+                        "endOffsets": "7867,7974,8054,8158,8265,8385,8481,8554"
                     }
                 }
             ]
