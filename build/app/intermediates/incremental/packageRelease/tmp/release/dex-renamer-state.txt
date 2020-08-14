@@ -1,0 +1,4 @@
+#Sun Aug 02 19:27:12 IST 2020
+base.0=C\:\\Users\\Taha\\Documents\\flutterprojects\\furniture_project\\build\\app\\intermediates\\transforms\\r8\\release\\0\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

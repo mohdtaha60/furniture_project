@@ -78,6 +78,7 @@ class ProductTile extends StatelessWidget {
                             color: Colors.white,
                             child: Text(
                               title,
+                              maxLines: 4,
                               style: TextStyle(
                                   color: Colors.black54,
                                   fontSize: 18,
