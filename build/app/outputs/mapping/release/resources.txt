@@ -2785,6 +2785,8 @@ layout:notification_template_custom_big:2131165187 => [dimen:notification_large_
 layout:notification_template_icon_group:2131165188 => [dimen:notification_large_icon_height:2130903051, dimen:notification_large_icon_width:2130903052, dimen:notification_big_circle_margin:2130903049, dimen:notification_right_icon_size:2130903055]
 layout:notification_template_part_chronometer:2131165189 => [style:TextAppearance_Compat_Notification_Time:2131361797]
 layout:notification_template_part_time:2131165190 => [style:TextAppearance_Compat_Notification_Time:2131361797]
+mipmap:ic_launcher:2131230720 => [mipmap:ic_launcher_background:2131230721, mipmap:ic_launcher_foreground:2131230722]
+mipmap:ic_launcher_round:2131230723 => [mipmap:ic_launcher_background:2131230721, mipmap:ic_launcher_foreground:2131230722]
 style:LaunchTheme:2131361792 => [drawable:launch_background:2130968597]
 style:TextAppearance_Compat_Notification_Info:2131361795 => [style:TextAppearance_Compat_Notification:2131361794, style:TextAppearance_Compat:-1, style:TextAppearance:-1]
 style:TextAppearance_Compat_Notification_Line2:2131361796 => [style:TextAppearance_Compat_Notification_Info:2131361795]
@@ -2979,3 +2981,9 @@ Skipped unused resource res/drawable-xxhdpi-v4/common_google_signin_btn_text_lig
 Skipped unused resource res/drawable-xxhdpi-v4/googleg_disabled_color_18.png: 727 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/googleg_standard_color_18.png: 1615 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/layout/custom_dialog.xml: -1 bytes (replaced with small dummy file of size 104 bytes)
+Skipped unused resource res/mipmap-mdpi-v4/ic_launcher_round.png: 1989 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-hdpi-v4/ic_launcher_round.png: 2861 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xhdpi-v4/ic_launcher_round.png: 4376 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xxhdpi-v4/ic_launcher_round.png: 6596 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-xxxhdpi-v4/ic_launcher_round.png: 10020 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/mipmap-anydpi-v26/ic_launcher_round.xml: -1 bytes (replaced with small dummy file of size 104 bytes)

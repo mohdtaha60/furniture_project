@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android.iml" filepath="$PROJECT_DIR$/.idea/modules/android.iml" group="android" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="android/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/504767964/cloud_firestore.iml" filepath="$PROJECT_DIR$/.idea/modules/504767964/cloud_firestore.iml" group="android/cloud_firestore" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/615160191/firebase_core.iml" filepath="$PROJECT_DIR$/.idea/modules/615160191/firebase_core.iml" group="android/firebase_core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-449450049/path_provider.iml" filepath="$PROJECT_DIR$/.idea/modules/-449450049/path_provider.iml" group="android/path_provider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-665880422/sqflite.iml" filepath="$PROJECT_DIR$/.idea/modules/-665880422/sqflite.iml" group="android/sqflite" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2107075049/url_launcher.iml" filepath="$PROJECT_DIR$/.idea/modules/2107075049/url_launcher.iml" group="android/url_launcher" />
+    </modules>
+  </component>
+</project>

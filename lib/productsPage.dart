@@ -58,13 +58,15 @@ class _ProductsPageState extends State<ProductsPage> {
         body: _loading == true
             ? Center(child: CircularProgressIndicator())
             : ListView(
+                shrinkWrap: true,
+                physics: BouncingScrollPhysics(),
                 children: products.map((e) {
-                return ProductTile(
-                  image: e.data["url"],
-                  title: e.data["ProductName"],
-                  code: e.data["ProductCode"],
-                );
-              }).toList())
+                  return ProductTile(
+                    image: e.data["url"],
+                    title: e.data["ProductName"],
+                    code: e.data["ProductCode"],
+                  );
+                }).toList())
         // Container(
         //     child: GridView.builder(
         //         gridDelegate:

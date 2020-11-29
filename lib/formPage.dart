@@ -14,13 +14,12 @@ class _FormPageState extends State<FormPage> {
   String _address, code, company, email, message, name, phone;
   final snackBar = SnackBar(content: Text('Form Submitted'));
   final _formKey = GlobalKey<FormState>();
-  _submit() {
+  _submit() async {
     _formKey.currentState.save();
-    _formKey.currentState.reset();
     setState(() {
       isSubmitting = true;
     });
-    _submitData();
+    await _submitData();
     setState(() {
       isSubmitting = false;
     });
@@ -35,6 +34,8 @@ class _FormPageState extends State<FormPage> {
             actions: <Widget>[
               FlatButton(
                 onPressed: () {
+                  _formKey.currentState.reset();
+
                   Navigator.of(ctx).pop();
                   Navigator.of(context).pop();
                 },
@@ -57,17 +58,20 @@ class _FormPageState extends State<FormPage> {
               Text(
                 "Submit your Query",
                 style: TextStyle(
-                  fontSize: 40,
+                  fontSize: 36,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black54,
+                  color: Colors.black87,
                 ),
               ),
               Form(
                 key: _formKey,
                 child: Column(
                   children: <Widget>[
-                    SizedBox(height: 20.0),
+                    SizedBox(height: 30.0),
                     TextFormField(
+                      textCapitalization: TextCapitalization.words,
+                      validator: (val) =>
+                          val.length < 2 ? 'Invalid Name' : null,
                       onSaved: (val) => name = val,
                       decoration: InputDecoration(
                           border: new OutlineInputBorder(
@@ -85,6 +89,8 @@ class _FormPageState extends State<FormPage> {
                     ),
                     SizedBox(height: 10.0),
                     TextFormField(
+                      validator: (val) =>
+                          val.length < 2 ? 'Invalid Email' : null,
                       onSaved: (val) => email = val,
                       decoration: InputDecoration(
                           border: new OutlineInputBorder(
@@ -102,6 +108,9 @@ class _FormPageState extends State<FormPage> {
                     ),
                     SizedBox(height: 10.0),
                     TextFormField(
+                      textCapitalization: TextCapitalization.words,
+                      validator: (val) =>
+                          val.length < 2 ? 'Invalid address' : null,
                       onSaved: (val) => _address = val,
                       decoration: InputDecoration(
                           border: new OutlineInputBorder(
@@ -119,6 +128,8 @@ class _FormPageState extends State<FormPage> {
                     ),
                     SizedBox(height: 10.0),
                     TextFormField(
+                      validator: (val) =>
+                          val.length < 2 ? 'Invalid Number' : null,
                       onSaved: (val) => phone = val,
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
@@ -154,6 +165,7 @@ class _FormPageState extends State<FormPage> {
                     ),
                     SizedBox(height: 10.0),
                     TextFormField(
+                      textCapitalization: TextCapitalization.words,
                       onSaved: (val) => company = val,
                       decoration: InputDecoration(
                           border: new OutlineInputBorder(
@@ -171,6 +183,9 @@ class _FormPageState extends State<FormPage> {
                     ),
                     SizedBox(height: 10.0),
                     TextFormField(
+                      textCapitalization: TextCapitalization.sentences,
+                      validator: (val) =>
+                          val.length < 2 ? 'Please write your query' : null,
                       onSaved: (val) => message = val,
                       decoration: InputDecoration(
                           border: new OutlineInputBorder(
@@ -197,12 +212,16 @@ class _FormPageState extends State<FormPage> {
                             height: 40.0,
                             child: Material(
                               borderRadius: BorderRadius.circular(20.0),
-                              shadowColor: Colors.greenAccent,
+                              shadowColor: Colors.lightBlueAccent,
                               color: Colors.black,
                               elevation: 7.0,
                               child: InkWell(
                                 onTap: () {
-                                  _submit();
+                                  if (_formKey.currentState.validate()) {
+                                    _submit();
+                                  } else {
+                                    print('error');
+                                  }
                                 },
                                 child: Center(
                                   child: Text(
@@ -216,6 +235,13 @@ class _FormPageState extends State<FormPage> {
                               ),
                             ),
                           ),
+                    // SizedBox(
+                    //   height: 100,
+                    //   width: MediaQuery.of(context).size.width - 100,
+                    //   child: Image.asset(
+                    //     "assets/logo.png",
+                    //   ),
+                    // ),
                     SizedBox(height: 15.0),
                   ],
                 ),
@@ -227,8 +253,8 @@ class _FormPageState extends State<FormPage> {
     );
   }
 
-  void _submitData() async {
-    Firestore.instance.collection('ContactForm').document().setData({
+  _submitData() async {
+    await Firestore.instance.collection('ContactForm').document().setData({
       'Name': name ?? '',
       'Address': _address ?? '',
       'Code': code ?? '',
@@ -238,5 +264,6 @@ class _FormPageState extends State<FormPage> {
       'Phone': phone ?? '',
       'Date': DateTime.now()
     });
+    return true;
   }
 }

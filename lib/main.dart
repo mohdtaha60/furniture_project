@@ -29,7 +29,6 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-
   int _index = 0;
 
   List<Widget> _child = [
@@ -39,22 +38,30 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       appBar: PreferredSize(
+      appBar: PreferredSize(
         preferredSize: Size.fromHeight(50.0),
         child: AppBar(
-          title: Center(
-            child: Text(
-              "Furniture",
-              style: TextStyle(
-                color: Colors.white,
+          shape: ContinuousRectangleBorder(
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(30),
+                  bottomRight: Radius.circular(30))),
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: 40,
+                child: Image.asset(
+                  "assets/logo.png",
+                ),
               ),
-            ),
+            ],
           ),
-          backgroundColor: Colors.black,
+          // ),
+          backgroundColor: Colors.white,
         ),
       ),
       body: Center(
-        child: (_child.elementAt(_index) ),
+        child: (_child.elementAt(_index)),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
@@ -62,28 +69,24 @@ class _MainPageState extends State<MainPage> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-          title: Text('Home'),
+            title: Text('Home'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.info),
-                title: Text('About'),
-
+            title: Text('About'),
           ),
-
         ],
-         currentIndex: _index,
-          onTap: (index) {
-            setState(() {
-              _index = index;
-            });
-          },
-
+        currentIndex: _index,
+        onTap: (index) {
+          setState(() {
+            _index = index;
+          });
+        },
       ),
       floatingActionButton: new FloatingActionButton(
         onPressed: () {
-          Navigator.of(context).push(MaterialPageRoute(builder: 
-          (context)=>    FormPage(),
-
+          Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => FormPage(),
           ));
         },
         backgroundColor: Colors.black,
